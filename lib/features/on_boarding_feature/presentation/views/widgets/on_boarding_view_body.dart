@@ -1,15 +1,18 @@
-
-import 'package:ai_chatbot_ai/core/utils/app_assets.dart';
-import 'package:ai_chatbot_ai/core/utils/app_strings.dart';
 import 'package:ai_chatbot_ai/core/utils/wave_painter.dart';
 import 'package:flutter/material.dart';
 
 import 'action_section_onboarding.dart';
 
-class OnBoarding2ViewBody extends StatelessWidget {
-  const OnBoarding2ViewBody({
+class OnBoardingViewBody extends StatelessWidget {
+  const OnBoardingViewBody({
     super.key,
+    required this.text,
+    required this.imagePath,
+    required this.nextOnPressed,
   });
+  final String text;
+  final String imagePath;
+  final void Function() nextOnPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -20,13 +23,13 @@ class OnBoarding2ViewBody extends StatelessWidget {
         children: [
           Expanded(
             flex: 9,
-            child: Image.asset(AppAssets.bot2),
+            child: Image.asset(imagePath),
           ),
           Expanded(
             flex: 3,
             child: ActionSectionOnboarding(
-              text: AppStrings.onBoardingString2,
-              nextOnPressed: () {},
+              text: text,
+              nextOnPressed: nextOnPressed,
             ),
           ),
         ],

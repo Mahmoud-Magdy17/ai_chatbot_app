@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class LoginViewBody extends StatelessWidget {
@@ -9,6 +7,13 @@ class LoginViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text("login view"),
+        ],
+      ),
+    );
   }
 }
