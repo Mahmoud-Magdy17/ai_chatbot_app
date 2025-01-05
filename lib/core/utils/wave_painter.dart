@@ -1,12 +1,12 @@
 import 'dart:developer';
 
-import 'package:ai_chatbot_ai/core/constants/app_colors.dart';
+import 'package:ai_chatbot_ai/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class WavePainter extends CustomPainter {
   final double scaler;
 
-  WavePainter({required this.scaler, super.repaint}); // WavePainter({required this.scaler});
+  WavePainter({required this.scaler, Listenable? repaint});
   @override
   void paint(Canvas canvas, Size size) {
     log(scaler.toString());

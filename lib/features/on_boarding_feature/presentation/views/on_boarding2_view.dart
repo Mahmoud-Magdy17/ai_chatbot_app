@@ -1,15 +1,16 @@
 import 'package:ai_chatbot_ai/core/utils/app_colors.dart';
-import 'package:ai_chatbot_ai/features/splash_feature/presentation/views/widgets/splash_view_design_animation.dart';
 import 'package:flutter/material.dart';
 
-class SplashView extends StatelessWidget {
-  const SplashView({super.key});
+import 'widgets/on_boarding2_view_body.dart';
+
+class OnBoarding2View extends StatelessWidget {
+  const OnBoarding2View({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: AppColors.primaryColor,
-      body: SplashViewDesingAnimation(),
+      body: OnBoarding2ViewBody(),
     );
   }
 }

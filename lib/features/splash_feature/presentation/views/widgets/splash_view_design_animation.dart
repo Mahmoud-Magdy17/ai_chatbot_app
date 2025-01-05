@@ -1,8 +1,8 @@
-import 'package:ai_chatbot_ai/features/on_boarding_feature/presentation/views/on_boarding_view.dart';
+import 'package:ai_chatbot_ai/features/on_boarding_feature/presentation/views/on_boarding1_view.dart';
 import 'package:flutter/material.dart';
 
 import 'splash_view_body.dart';
-import 'wave_painter.dart';
+import '../../../../../core/utils/wave_painter.dart';
 
 class SplashViewDesingAnimation extends StatefulWidget {
   const SplashViewDesingAnimation({super.key});
@@ -36,7 +36,7 @@ class _SplashViewDesingAnimationState extends State<SplashViewDesingAnimation>
           context,
           MaterialPageRoute(
             builder: (context) {
-              return const OnBoardingView();
+              return const OnBoarding1View();
             },
           ),
         );

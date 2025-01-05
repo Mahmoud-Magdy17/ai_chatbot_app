@@ -1,3 +1,4 @@
+import 'package:ai_chatbot_ai/core/utils/app_assets.dart';
 import 'package:flutter/material.dart';
 
 import 'hello_text.dart';
@@ -14,7 +15,7 @@ class SplashViewBody extends StatelessWidget {
       children: [
         Expanded(
           flex: 6,
-          child: Image.asset('assets/images/chat.png'),
+          child: Image.asset(AppAssets.bot1),
         ),
         const Expanded(
           flex: 3,
