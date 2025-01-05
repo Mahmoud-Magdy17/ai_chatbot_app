@@ -6,8 +6,7 @@ import 'package:flutter/material.dart';
 class WavePainter extends CustomPainter {
   final double scaler;
 
-  WavePainter({super.repaint, required this.scaler});
-  // WavePainter({required this.scaler});
+  WavePainter({required this.scaler, super.repaint}); // WavePainter({required this.scaler});
   @override
   void paint(Canvas canvas, Size size) {
     log(scaler.toString());
@@ -30,7 +29,7 @@ class WavePainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    return false;
+  bool shouldRepaint(covariant WavePainter oldDelegate) {
+    return oldDelegate.scaler != scaler;
   }
 }

@@ -38,6 +38,7 @@ dependencies:
   dio: ^5.7.0
   shared_preferences: ^2.3.5
   get_it: ^8.0.3
+  audioplayers: ^6.1.0
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +65,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/chat.png
+    - assets/sounds/note7.wav
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
