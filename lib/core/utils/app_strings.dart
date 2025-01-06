@@ -12,9 +12,9 @@ class AppStrings {
   static const String forgetPassword = "Forget Password";
   static const String signUp = "Sign UP";
   static const String orContinueWith = "Or continue with";
-  static const String bySigningUpYouAcceptThe = "By Signing Up You Accept The";
+  static const String bySigningUpYouAcceptThe = "By Signing Up You Accept The ";
   static const String termOfService = "Terms Of Service";
-  static const String andOur = "And our";
+  static const String andOur = " And our ";
   static const String privacyPolicy = "Privacy Policy";
-  static const String alreadyRegisterd = "already registerd?";
+  static const String alreadyRegisterd = "already registerd? ";
 }

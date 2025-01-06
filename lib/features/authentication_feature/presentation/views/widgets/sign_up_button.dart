@@ -16,7 +16,8 @@ class SignUpButton extends StatelessWidget {
       width: double.infinity,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        gradient: AppColors.linearGradient,
+        // gradient: AppColors.linearGradient,
+        color: AppColors.magentaColor,
       ),
       child: ElevatedButton(
         onPressed: () {},

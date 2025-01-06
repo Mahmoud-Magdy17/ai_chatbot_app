@@ -1,5 +1,3 @@
-
-
 import 'package:ai_chatbot_ai/core/utils/app_strings.dart';
 import 'package:ai_chatbot_ai/core/utils/app_style.dart';
 import 'package:flutter/material.dart';
@@ -38,11 +36,11 @@ class InputSectionLoginForm extends StatelessWidget {
         ),
         const CustomEmailAndUserNameField(),
         const SizedBox(
-          height: 24,
+          height: 16,
         ),
         const CustomPasswordField(),
         const SizedBox(
-          height: 32,
+          height: 16,
         ),
         const Row(
           mainAxisAlignment: MainAxisAlignment.end,
@@ -51,7 +49,7 @@ class InputSectionLoginForm extends StatelessWidget {
           ],
         ),
         const SizedBox(
-          height: 32,
+          height: 24,
         ),
         const LoginButton(),
         const SizedBox(
