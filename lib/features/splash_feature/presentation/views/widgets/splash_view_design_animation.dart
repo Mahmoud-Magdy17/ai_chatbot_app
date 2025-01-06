@@ -1,8 +1,7 @@
-import 'package:ai_chatbot_ai/features/on_boarding_feature/presentation/views/on_boarding1_view.dart';
-import 'package:ai_chatbot_ai/features/splash_feature/data/repos/navigate_from_splash/navigate_from_splash_impl.dart';
 import 'package:flutter/material.dart';
 
 import 'splash_view_body.dart';
+import '../../../data/repos/navigate_from_splash/navigate_from_splash_impl.dart';
 import '../../../../../core/utils/wave_painter.dart';
 
 class SplashViewDesingAnimation extends StatefulWidget {
@@ -34,14 +33,6 @@ class _SplashViewDesingAnimationState extends State<SplashViewDesingAnimation>
       const Duration(seconds: 4),
       () {
         NavigateFromSplashImpl().navigateFromSplashRepo(context: context);
-        // Navigator.pushReplacement(
-        //   context,
-        //   MaterialPageRoute(
-        //     builder: (context) {
-        //       return const OnBoarding1View();
-        //     },
-        //   ),
-        // );
       },
     );
   }
@@ -62,7 +53,7 @@ class _SplashViewDesingAnimationState extends State<SplashViewDesingAnimation>
             scaler: _shapeAnimation.value,
             repaint: _shapeAnimation,
           ),
-          child: const SplashViewBody(),
+          child: const Center(child: SplashViewBody()),
         );
       },
     );

@@ -37,7 +37,7 @@ class _CustomPasswordFieldState extends State<CustomPasswordField> {
         },
         obscureText: true,
         decoration: InputDecoration(
-          prefixIcon: const Icon(Icons.email_outlined),
+          prefixIcon: const Icon(Icons.vpn_key_outlined),
           iconColor: AppColors.greyColor,
           border: InputBorder.none,
           hintText: AppStrings.password,

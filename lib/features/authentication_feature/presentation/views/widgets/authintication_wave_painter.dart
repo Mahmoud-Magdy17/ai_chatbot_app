@@ -14,11 +14,11 @@ class AuthinticationWavePainter extends CustomPainter {
       ..color = AppColors.backGroundColor
       ..style = PaintingStyle.fill;
     final path = Path()
-      ..moveTo(0, size.height * 0.35)
-      ..quadraticBezierTo(size.width * 0.25, size.height * 0.25,
-          size.width * 0.5, size.height * 0.30)
+      ..moveTo(0, size.height * 0.25)
+      ..quadraticBezierTo(size.width * 0.25, size.height * 0.15,
+          size.width * 0.5, size.height * 0.20)
       ..quadraticBezierTo(
-          size.width * 0.75, size.height * 0.25, size.width, size.height * 0.35)
+          size.width * 0.75, size.height * 0.15, size.width, size.height * 0.25)
       ..lineTo(size.width, 0)
       ..lineTo(0, 0)
       ..close();

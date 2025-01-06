@@ -21,7 +21,7 @@ class AppStyle {
     fontWeight: FontWeight.w600,
     color: AppColors.blackColor,
   );
-  static TextStyle popins40014 = TextStyle(
+  static TextStyle popins40014 = const TextStyle(
     fontFamily: "popins",
     fontSize: 14,
     fontWeight: FontWeight.w400,
