@@ -1,4 +1,5 @@
 import 'package:ai_chatbot_ai/features/on_boarding_feature/presentation/views/on_boarding1_view.dart';
+import 'package:ai_chatbot_ai/features/splash_feature/data/repos/navigate_from_splash/navigate_from_splash_impl.dart';
 import 'package:flutter/material.dart';
 
 import 'splash_view_body.dart';
@@ -32,14 +33,15 @@ class _SplashViewDesingAnimationState extends State<SplashViewDesingAnimation>
     Future.delayed(
       const Duration(seconds: 4),
       () {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (context) {
-              return const OnBoarding1View();
-            },
-          ),
-        );
+        NavigateFromSplashImpl().navigateFromSplashRepo(context: context);
+        // Navigator.pushReplacement(
+        //   context,
+        //   MaterialPageRoute(
+        //     builder: (context) {
+        //       return const OnBoarding1View();
+        //     },
+        //   ),
+        // );
       },
     );
   }

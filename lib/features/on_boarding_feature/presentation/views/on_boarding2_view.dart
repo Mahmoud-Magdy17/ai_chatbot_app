@@ -1,3 +1,5 @@
+import 'package:ai_chatbot_ai/core/cache/cache_helper.dart';
+import 'package:ai_chatbot_ai/core/cache/constants.dart';
 import 'package:ai_chatbot_ai/core/utils/app_assets.dart';
 import 'package:ai_chatbot_ai/core/utils/app_colors.dart';
 import 'package:ai_chatbot_ai/core/utils/app_strings.dart';
@@ -19,6 +21,11 @@ class OnBoarding2View extends StatelessWidget {
         nextOnPressed: () {
           Navigator.pop(context);
           Navigator.pop(context);
+          CacheHelper().saveData(
+            key: CasheConstants.isNotFirstOpen,
+            value: true,
+          );
+
           Navigator.push(
             context,
             MaterialPageRoute(
