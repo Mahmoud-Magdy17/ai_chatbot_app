@@ -66,6 +66,7 @@ flutter:
   assets:
     - assets/images/bot1.png
     - assets/images/bot2.png
+    - assets/images/bot_head.png
     - assets/sounds/note7.wav
   #   - images/a_dot_ham.jpeg
 

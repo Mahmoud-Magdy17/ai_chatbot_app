@@ -57,7 +57,9 @@ class _SplashViewDesingAnimationState extends State<SplashViewDesingAnimation>
       builder: (context, child) {
         return CustomPaint(
           painter: WavePainter(
-              scaler: _shapeAnimation.value, repaint: _shapeAnimation),
+            scaler: _shapeAnimation.value,
+            repaint: _shapeAnimation,
+          ),
           child: const SplashViewBody(),
         );
       },
