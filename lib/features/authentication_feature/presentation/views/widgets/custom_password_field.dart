@@ -4,21 +4,14 @@ import 'package:ai_chatbot_ai/core/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
 class CustomPasswordField extends StatefulWidget {
-  const CustomPasswordField({super.key});
-
+  const CustomPasswordField({super.key, required this.controller});
+  final TextEditingController controller;
   @override
   State<CustomPasswordField> createState() => _CustomPasswordFieldState();
 }
 
 class _CustomPasswordFieldState extends State<CustomPasswordField> {
   bool isEdited = false;
-  TextEditingController controller = TextEditingController();
-  @override
-  void dispose() {
-    controller.dispose();
-    super.dispose();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -29,7 +22,7 @@ class _CustomPasswordFieldState extends State<CustomPasswordField> {
           color: isEdited ? Colors.transparent : AppColors.backGroundColor,
           borderRadius: BorderRadius.circular(16)),
       child: TextFormField(
-        controller: controller,
+        controller: widget.controller,
         onChanged: (value) {
           setState(() {
             isEdited = true;

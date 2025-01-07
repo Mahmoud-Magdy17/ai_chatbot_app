@@ -6,8 +6,10 @@ class CustomTextFormField extends StatefulWidget {
   const CustomTextFormField({
     super.key,
     required this.hintText,
+    required this.controller,
   });
   final String hintText;
+  final TextEditingController controller;
   @override
   State<CustomTextFormField> createState() => _CustomTextFormFieldState();
 }
@@ -31,7 +33,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           color: isEdited ? Colors.transparent : AppColors.backGroundColor,
           borderRadius: BorderRadius.circular(16)),
       child: TextFormField(
-        controller: controller,
+        controller: widget.controller,
         onChanged: (value) {
           setState(() {
             isEdited = true;

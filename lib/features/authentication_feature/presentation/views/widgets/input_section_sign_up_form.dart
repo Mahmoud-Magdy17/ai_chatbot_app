@@ -13,7 +13,7 @@ class InputSectionSignUpForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return Column(
       children: [
         const SizedBox(
           height: 12,
@@ -32,19 +32,23 @@ class InputSectionSignUpForm extends StatelessWidget {
         const SizedBox(
           height: 24,
         ),
-        const CustomTextFormField(
+        CustomTextFormField(
           hintText: AppStrings.fullName,
+          controller: TextEditingController(),
         ),
         const SizedBox(
           height: 16,
         ),
-        const CustomTextFormField(
+        CustomTextFormField(
           hintText: AppStrings.email,
+          controller: TextEditingController(),
         ),
         const SizedBox(
           height: 16,
         ),
-        const CustomPasswordField(),
+        CustomPasswordField(
+          controller: TextEditingController(),
+        ),
         const SizedBox(
           height: 40,
         ),
