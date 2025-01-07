@@ -10,7 +10,11 @@ class AppStrings {
   static const String emailOrUserName = "Email or UserName";
   static const String password = "Password";
   static const String forgetPassword = "Forget Password";
+  static const String createYourAccount = "Creat Your Account";
+  static const String signUpToGetStarted = "Sign Up To Get Started";
   static const String signUp = "Sign UP";
+  static const String fullName = "Full Name";
+  static const String email = "Email";
   static const String orContinueWith = "Or continue with";
   static const String bySigningUpYouAcceptThe = "By Signing Up You Accept The ";
   static const String termOfService = "Terms Of Service";

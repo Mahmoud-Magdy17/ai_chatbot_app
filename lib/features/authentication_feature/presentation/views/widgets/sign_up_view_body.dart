@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'authentication_view_header.dart';
 import 'authintication_wave_painter.dart';
-import 'or_continue_with.dart';
-import 'other_actions_section_sign_up_form.dart';
+import 'sign_up_view_form.dart';
 
 class SignUpViewBody extends StatelessWidget {
   const SignUpViewBody({
@@ -28,20 +27,8 @@ class SignUpViewBody extends StatelessWidget {
               ),
               Expanded(
                 flex: 8,
-                child: SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      Text(
-                        "aasd",
-                      ),
-                      SizedBox(
-                        height: 60,
-                        child: OrContinueWith(),
-                      ),
-                      OtherActionsSectionSignUpForm(),
-                    ],
-                  ),
-                ),
+                child: 
+                SignUpViewForm()
               ),
             ],
           ),

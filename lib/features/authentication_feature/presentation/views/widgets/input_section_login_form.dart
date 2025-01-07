@@ -35,7 +35,9 @@ class InputSectionLoginForm extends StatelessWidget {
         const SizedBox(
           height: 24,
         ),
-        const CustomEmailAndUserNameField(),
+        const CustomTextFormField(
+          hintText: AppStrings.emailOrUserName,
+        ),
         const SizedBox(
           height: 16,
         ),

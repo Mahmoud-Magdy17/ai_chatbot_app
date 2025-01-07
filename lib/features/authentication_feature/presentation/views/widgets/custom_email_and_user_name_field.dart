@@ -1,20 +1,18 @@
 import 'package:ai_chatbot_ai/core/utils/app_colors.dart';
-import 'package:ai_chatbot_ai/core/utils/app_strings.dart';
 import 'package:ai_chatbot_ai/core/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
-class CustomEmailAndUserNameField extends StatefulWidget {
-  const CustomEmailAndUserNameField({
+class CustomTextFormField extends StatefulWidget {
+  const CustomTextFormField({
     super.key,
+    required this.hintText,
   });
-
+  final String hintText;
   @override
-  State<CustomEmailAndUserNameField> createState() =>
-      _CustomEmailAndUserNameFieldState();
+  State<CustomTextFormField> createState() => _CustomTextFormFieldState();
 }
 
-class _CustomEmailAndUserNameFieldState
-    extends State<CustomEmailAndUserNameField> {
+class _CustomTextFormFieldState extends State<CustomTextFormField> {
   bool isEdited = false;
   TextEditingController controller = TextEditingController();
   @override
@@ -43,7 +41,7 @@ class _CustomEmailAndUserNameFieldState
           prefixIcon: const Icon(Icons.email_outlined),
           iconColor: AppColors.greyColor,
           border: InputBorder.none,
-          hintText: AppStrings.emailOrUserName,
+          hintText: widget.hintText,
           hintStyle: AppStyle.popins40014,
         ),
       ),
