@@ -1,7 +1,10 @@
 import 'package:ai_chatbot_ai/core/utils/app_assets.dart';
-import 'package:ai_chatbot_ai/features/authentication_feature/presentation/views/widgets/authentication_view_header.dart';
-import 'package:ai_chatbot_ai/features/authentication_feature/presentation/views/widgets/authintication_wave_painter.dart';
 import 'package:flutter/material.dart';
+
+import 'authentication_view_header.dart';
+import 'authintication_wave_painter.dart';
+import 'or_continue_with.dart';
+import 'other_actions_section_sign_up_form.dart';
 
 class SignUpViewBody extends StatelessWidget {
   const SignUpViewBody({
@@ -25,8 +28,19 @@ class SignUpViewBody extends StatelessWidget {
               ),
               Expanded(
                 flex: 8,
-                child: Text(
-                  "",
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Text(
+                        "aasd",
+                      ),
+                      SizedBox(
+                        height: 60,
+                        child: OrContinueWith(),
+                      ),
+                      OtherActionsSectionSignUpForm(),
+                    ],
+                  ),
                 ),
               ),
             ],

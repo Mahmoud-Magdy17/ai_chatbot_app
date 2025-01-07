@@ -17,4 +17,5 @@ class AppStrings {
   static const String andOur = " And our ";
   static const String privacyPolicy = "Privacy Policy";
   static const String alreadyRegisterd = "already registerd? ";
+  static const String dontHaveAccount = "Don't Have Account? ";
 }

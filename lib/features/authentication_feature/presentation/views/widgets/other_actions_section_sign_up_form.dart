@@ -1,13 +1,13 @@
 import 'package:ai_chatbot_ai/core/utils/app_strings.dart';
+import 'package:ai_chatbot_ai/features/authentication_feature/presentation/views/login_view.dart';
 import 'package:flutter/material.dart';
 
-import '../sign_up_view.dart';
 import 'other_action.dart';
 import 'custom_approving_privacy_policy.dart';
 import 'other_login_method.dart';
 
-class OtherActionsSectionLoginForm extends StatelessWidget {
-  const OtherActionsSectionLoginForm({
+class OtherActionsSectionSignUpForm extends StatelessWidget {
+  const OtherActionsSectionSignUpForm({
     super.key,
   });
 
@@ -24,14 +24,14 @@ class OtherActionsSectionLoginForm extends StatelessWidget {
           height: 8,
         ),
         OtherAction(
-          text1: AppStrings.dontHaveAccount,
-          text2: AppStrings.signUp,
+          text1: AppStrings.alreadyRegisterd,
+          text2: AppStrings.login,
           onTap: () {
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return const SignUpView();
+                  return const LoginView();
                 },
               ),
             );

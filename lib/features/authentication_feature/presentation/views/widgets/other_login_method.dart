@@ -3,8 +3,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'custom_login_method_button.dart';
 
-class OtherLoginMethods extends StatelessWidget {
-  const OtherLoginMethods({
+class OtherAuthenticationMethods extends StatelessWidget {
+  const OtherAuthenticationMethods({
     super.key,
   });
 
@@ -25,7 +25,6 @@ class OtherLoginMethods extends StatelessWidget {
           onTap: () {},
           icon: FontAwesomeIcons.instagram,
         ),
-        
       ],
     );
   }
