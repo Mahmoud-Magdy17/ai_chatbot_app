@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 
 class SignUpButton extends StatelessWidget {
   const SignUpButton({
-    super.key,
+    super.key, required this.onPressed,
   });
-
+  final Function() onPressed;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,7 +20,7 @@ class SignUpButton extends StatelessWidget {
         color: AppColors.magentaColor,
       ),
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: onPressed,
         style: ElevatedButton.styleFrom(
           shape: ContinuousRectangleBorder(
               borderRadius: BorderRadius.circular(18)),

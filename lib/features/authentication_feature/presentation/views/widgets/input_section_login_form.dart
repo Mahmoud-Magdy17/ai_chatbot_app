@@ -1,5 +1,6 @@
 import 'package:ai_chatbot_ai/core/utils/app_strings.dart';
 import 'package:ai_chatbot_ai/core/utils/app_style.dart';
+import 'package:ai_chatbot_ai/features/authentication_feature/presentation/views/sign_up_view.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_email_and_user_name_field.dart';
@@ -51,11 +52,24 @@ class InputSectionLoginForm extends StatelessWidget {
         const SizedBox(
           height: 24,
         ),
-        const LoginButton(),
+        LoginButton(
+          onPressed: () {},
+        ),
         const SizedBox(
           height: 16,
         ),
-        const SignUpButton(),
+        SignUpButton(
+          onPressed: () {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: (context) {
+                  return const SignUpView();
+                },
+              ),
+            );
+          },
+        ),
       ],
     );
   }

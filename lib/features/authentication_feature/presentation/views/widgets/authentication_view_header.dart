@@ -1,11 +1,11 @@
-import 'package:ai_chatbot_ai/core/utils/app_assets.dart';
 import 'package:flutter/material.dart';
 
-class LoginViewHeader extends StatelessWidget {
-  const LoginViewHeader({
+class AuthenticationViewHeader extends StatelessWidget {
+  const AuthenticationViewHeader({
     super.key,
+    required this.image,
   });
-
+  final String image;
   @override
   Widget build(BuildContext context) {
     return Column(children: [
@@ -18,7 +18,7 @@ class LoginViewHeader extends StatelessWidget {
           height: 135,
           child: Image.asset(
             fit: BoxFit.contain,
-            AppAssets.botHead,
+            image
           ),
         ),
       ),

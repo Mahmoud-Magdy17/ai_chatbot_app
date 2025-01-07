@@ -3,10 +3,10 @@ import 'dart:developer';
 import 'package:ai_chatbot_ai/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
-class AuthinticationWavePainter extends CustomPainter {
+class AuthenticationWavePainter extends CustomPainter {
   final double scaler;
 
-  AuthinticationWavePainter({required this.scaler, Listenable? repaint});
+  AuthenticationWavePainter({required this.scaler, Listenable? repaint});
   @override
   void paint(Canvas canvas, Size size) {
     log(scaler.toString());
@@ -27,7 +27,7 @@ class AuthinticationWavePainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant AuthinticationWavePainter oldDelegate) {
+  bool shouldRepaint(covariant AuthenticationWavePainter oldDelegate) {
     return oldDelegate.scaler != scaler;
   }
 }
